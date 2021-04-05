@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>String Functions in Javascript</h1>
+        <ul>
+            <li>indexOf(), LastIndexOf()</li>
+            <li>slice(), substring(), substr()</li>
+            <li>replace()</li>
+            <li>toUpperCase()</li>
+            <li>toLowerCase()</li>
+            <li>concat()</li>
+            <li>trim()</li>
+            <li>charAt()</li>
+            <li>charCodeAt()</li>
+        </ul>
+    </div>
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+
+        // First occurence of a substring
+        // var position = str.indexOf('is');
+        // console.log(position);
+
+        // Last occurence of a substring
+        // position = str.lastIndexOf('is');
+        // console.log(position);
+
+        // Substring from a string 
+        // slice(index-inclusive, index-exclusive)
+        // var substr = str.slice(1,6);
+
+        // substring(index-inclusive, index-exclusive)
+        // var substr = str.substring(1,7);
+
+        // substr(start-index,length)
+        // var substr = str.substr(2,10);     
+        // console.log(substr);
+
+        var rp = str.replace('string', 'football');
+        console.log(str);
+        console.log(rp);
+
+        // Converting string to Upper and lowercase
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        // Concat strings
+        // var newString = str.concat(' and we are learning string functions');
+        // console.log(newString);
+
+        var strWhitespace = "    this string contains             whitespaces        ";
+        console.log(strWhitespace);
+        // trim() removes spaces from start and end
+        console.log(strWhitespace.trim());
+
+        var char3 = str.charAt(3);
+        var charCode3 = str.charCodeAt(3);
+        console.log(char3);         // return character
+        console.log(charCode3);     // return ASCII value
+    </script>
+</body>
+</html>
